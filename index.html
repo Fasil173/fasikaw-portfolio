@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Fasikaw Mebrat - Cybersecurity Portfolio</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background: url('c.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #333;
     }
 
@@ -18,6 +19,8 @@
       max-width: 800px;
       margin: auto;
       padding: 20px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
     }
 
     header, footer {
@@ -28,7 +31,7 @@
     }
 
     .hero {
-      background: #1c2d4a;
+      background: rgba(28, 45, 74, 0.9);
       text-align: center;
       padding: 60px 20px 30px;
       color: white;
@@ -100,6 +103,41 @@
       width: 100px;
     }
 
+    /* Featured Projects Section */
+    .image-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .image-card {
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 350px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .image-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .image-card h3 {
+      margin: 10px 0 5px;
+      color: #0f1c2e;
+    }
+
+    .image-card p {
+      font-size: 0.95rem;
+    }
+
+    footer p {
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -118,7 +156,7 @@
       <p>
         I am a cybersecurity professional with 2 years of hands-on experience in SOC operations,
         threat analysis, incident response, and cybersecurity awareness initiatives. I graduated
-        from Raya University in July 2023 with a GPA of 3.82.
+        from Raya University in July 2023 with a GPA of 3.89.
       </p>
     </div>
   </section>
@@ -143,6 +181,25 @@
         <li>Cybersecurity Awareness & End-User Training</li>
         <li>Strong Documentation and Reporting Skills</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Featured Images Section -->
+  <section class="featured-images">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <div class="image-row">
+        <div class="image-card">
+          <img src="a.jpg" alt="Project A" />
+          <h3>Security Awareness </h3>
+          
+        </div>
+        <div class="image-card">
+          <img src="b.jpg" alt="Project B" />
+          <h3>Threat Simulation</h3>
+          <p>Led a red-team simulation to evaluate SOC response and improve threat detection mechanisms.</p>
+        </div>
+      </div>
     </div>
   </section>
 
