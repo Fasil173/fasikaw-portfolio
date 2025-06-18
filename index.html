@@ -9,7 +9,7 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: url('c.jpg') no-repeat center center fixed;
+      background: url('c.jpg') no-repeat center center scroll;
       background-size: cover;
       color: #333;
     }
@@ -158,6 +158,36 @@
     footer p {
       margin: 0;
     }
+
+    /* ✅ Mobile responsive styles */
+    @media (max-width: 600px) {
+      .container {
+        padding: 10px;
+        width: 95%;
+      }
+
+      .profile-img {
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+      }
+
+      .top-right-button {
+        font-size: 12px;
+        padding: 8px 12px;
+        right: 10px;
+      }
+
+      .image-row,
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .image-card {
+        max-width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -168,7 +198,7 @@
   <!-- Incident 2024-25 Button -->
   <a href="inciedent2024.25.html" class="top-right-button" style="top: 65px;">Incident 2024-25</a>
 
-  <!-- Hero Section with Image -->
+  <!-- Hero Section -->
   <div class="hero">
     <img src="fasil.jpg" alt="Fasikaw Mebrat" class="profile-img" />
     <h1>Fasikaw Mebrat</h1>
@@ -210,7 +240,7 @@
     </div>
   </section>
 
-  <!-- Featured Projects Section -->
+  <!-- Projects Section -->
   <section class="featured-images">
     <div class="container">
       <h2>Featured Projects</h2>
